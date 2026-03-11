@@ -142,6 +142,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="models\Books.cs" />
+    <Compile Include="models\KonyvtardbContext.cs" />
+    <Compile Include="models\KonyvtarResults.cs" />
     <Compile Include="view\Add.xaml.cs">
       <DependentUpon>Add.xaml</DependentUpon>
     </Compile>
