@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,20 @@ namespace WPFdoga_FR_12B.view
         public Show()
         {
             InitializeComponent();
+        }
+
+        public object ItemsSource
+        {
+            get { return dataGrid1.ItemsSource; }
+            set { dataGrid1.ItemsSource = (IEnumerable)value; }
+        }
+
+        private void dataGrid1_AutoGeneratingColumn(object sender, DataGridAutoGeneratingColumnEventArgs e)
+        {
+            if (e.PropertyType.IsClass && e.PropertyType != typeof(string))
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

@@ -7,6 +7,44 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#141E30" Offset="0"/>
+                <GradientStop Color="#243B55" Offset="0.5"/>
+                <GradientStop Color="#2C5364" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Menu Grid.Row="0"
+      Background="#22000000"
+      Foreground="#a08800">
+
+            <MenuItem Header="Show">
+                <MenuItem Header="Books"/>
+            </MenuItem>
+
+            <MenuItem Header="Add">
+                <MenuItem Header="Books"/>
+            </MenuItem>
+
+            <MenuItem Header="Change">
+                <MenuItem Header="Books"/>
+            </MenuItem>
+
+            <MenuItem Header="Delete">
+                <MenuItem Header="Books"/>
+            </MenuItem>
+        </Menu>
+
+        <Frame x:Name="MainPage"
+       Grid.Row="1"
+       Padding="15"
+       Background="#33000000"
+       NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>
