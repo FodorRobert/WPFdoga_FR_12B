@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFdoga_FR_12B"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Konyvtar" Height="450" Width="800">
     <Grid>
         <Grid.Background>
             <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
@@ -24,19 +24,19 @@
       Background="#22000000"
       Foreground="#a08800">
 
-            <MenuItem Header="Show">
-                <MenuItem Header="Books"/>
+            <MenuItem Header="Show" Click="MenuItem_Click">
+                <MenuItem Header="Books" Click="MenuItem_Click"/>
             </MenuItem>
 
             <MenuItem Header="Add">
-                <MenuItem Header="Books"/>
+                <MenuItem Header="Books" Click="MenuItem_Click1"/>
             </MenuItem>
 
             <MenuItem Header="Change">
-                <MenuItem Header="Books"/>
+                <MenuItem Header="Books" Click="MenuItem_Click2"/>
             </MenuItem>
 
-            <MenuItem Header="Delete">
+            <MenuItem Header="Delete" Click="MenuItem_Click3">
                 <MenuItem Header="Books"/>
             </MenuItem>
         </Menu>

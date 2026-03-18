@@ -19,9 +19,9 @@ namespace WPFdoga_FR_12B.view
     /// <summary>
     /// Interaction logic for Show.xaml
     /// </summary>
-    public partial class Show : Page
+    public partial class ShowDatas : Page
     {
-        public Show()
+        public ShowDatas()
         {
             InitializeComponent();
         }
